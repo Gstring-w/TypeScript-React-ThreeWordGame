@@ -24,17 +24,6 @@ const Type = (type: ChessType) => {
   return result;
 };
 
-export const Chess = ({ type, event }: IProps) => {
-  return (
-    <div
-      className="chess"
-      onClick={e => {
-        if (type == ChessType.none) {
-          event(e);
-        }
-      }}
-    >
-      {Type(type)}
-    </div>
-  );
+export const Chess = ({ type }: IProps) => {
+  return <div className="chess">{Type(type)}</div>;
 };

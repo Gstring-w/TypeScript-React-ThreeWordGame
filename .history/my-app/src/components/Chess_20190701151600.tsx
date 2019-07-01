@@ -3,7 +3,7 @@ import React from "react";
 import "./Chess.css";
 interface IProps {
   type: ChessType;
-  event: (e: any) => void;
+  event: (e: MouseEvent) => void;
 }
 
 const Type = (type: ChessType) => {

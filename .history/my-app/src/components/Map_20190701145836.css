@@ -1,0 +1,5 @@
+.map-wrapper {
+  width: 250px;
+  display: flex;
+  flex-wrap: wrap;
+}
